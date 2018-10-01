@@ -1,20 +1,80 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    CRYPTO
+  </a>
 
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Coin List</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">My Wallet</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <h1>CRYPTO COIN LIST</h1>
+
+  <h2>coins count: 4</h2>
+
+  <div class="row coin-list">
+    <div class="col-4 coin-list-item">
+      <div class="card">
+        <img class="img-thumbnail rounded mx-auto d-block" src="https://www.cryptocompare.com//media/12318415/42.png"
+          alt="">
+        <div class="card-body mx-auto">
+          <h5 class="card-title">42 Coin (42) <span class="badge badge-secondary">42</span>
+          </h5>
+          <button class="btn btn-primary">add to wallet</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 coin-list-item">
+      <div class="card">
+        <img class="img-thumbnail rounded mx-auto d-block" src="https://www.cryptocompare.com//media/27010595/300.png"
+          alt="">
+        <div class="card-body mx-auto">
+          <h5 class="card-title">300 token (300) <span class="badge badge-secondary">300</span>
+          </h5>
+          <button class="btn btn-primary">add to wallet</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-4 coin-list-item">
+      <div class="card">
+        <img class="img-thumbnail rounded mx-auto d-block" src="https://www.cryptocompare.com//media/351001/404.png"
+          alt="">
+        <div class="card-body mx-auto">
+          <h5 class="card-title">404Coin (404) <span class="badge badge-secondary">404</span>
+          </h5>
+          <button class="btn btn-primary">add to wallet</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 coin-list-item">
+      <div class="card">
+        <img class="img-thumbnail rounded mx-auto d-block" src="https://www.cryptocompare.com//media/20646/eth_logo.png"
+          alt="">
+        <div class="card-body mx-auto">
+          <h5 class="card-title">Ethereum (ETH) <span class="badge badge-secondary">ETH</span>
+          </h5>
+          <button class="btn btn-primary">add to wallet</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
